@@ -2,7 +2,7 @@
 
 RTV_ModTool is a save-management and editing utility for Road to Vostok testing.
 
-⚠️ Please use at your own risk.
+⚠️ Please use at your own risk and open an issue if any bugs are encountered.
 
 ---
 
@@ -36,7 +36,10 @@ Run this command in the folder containing `main.py`:
 ```
 py -m PyInstaller --noconfirm --onefile --windowed --icon=assets/icon.ico --add-data "assets;assets" --name RTV_ModTool_Beta_v0.4.14 main.py
 ```
-The --add-data option is important because it includes the custom logo and icon files in the packaged app.
+- Click 'Select Save Root'
+- Navigate to C:\Users\YourUser\AppData\Roaming and select the Road to Vostok folder
+- Note that when this folder is selected the tool will insert folders related to backups, syncing, and character profiles then build your BaseCharacterTemplate from your initial save.
+- Set values as desired and click Save Player, which saves that Character Profile to it's own folder, as well as setting it as the active one in the main game files. When the app is re-opened it will sync the active character from the game file to it's corresponding character folder.
 
 ## Planned Features
 - Inventory, Equipment, Catalog Editing
