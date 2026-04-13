@@ -31,7 +31,6 @@ Files included:
 - assets/icon.ico
 - assets/logo.png
 - CHANGELOG.md
-- REDDIT_POST_FEATURES.md
 
 Building the EXE yourself:
 Use PyInstaller from the folder containing main.py:
