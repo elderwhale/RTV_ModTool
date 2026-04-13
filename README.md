@@ -2,6 +2,8 @@ RTV_ModTool Beta v0.4.14
 
 RTV_ModTool is a save-management and editing utility for Road to Vostok testing.
 
+Please use at your own risk.
+
 What it does:
 - lets you select a live save root and manage character folders from one place
 - tracks which character folder is currently linked to the active root save
@@ -10,7 +12,11 @@ What it does:
 - shows world values in read-only form for reference
 - creates rolling backups before restore and sync operations
 - caps backups to 10 per character slot to avoid save-folder bloat
-- includes a Buy Me a Coffee button
+
+Planned Features:
+
+- Inventory, Equipment, Catalog Editing
+- Alternate start location
 
 Notes:
 - character folders are shown by folder name only
@@ -27,9 +33,11 @@ Files included:
 - CHANGELOG.md
 - REDDIT_POST_FEATURES.md
 
-Build the EXE:
+Building the EXE yourself:
 Use PyInstaller from the folder containing main.py:
 
+```
 py -m PyInstaller --noconfirm --onefile --windowed --icon=assets/icon.ico --add-data "assets;assets" --name RTV_ModTool_Beta_v0.4.14 main.py
+```
 
 The --add-data option is important because it includes the custom logo and icon files in the packaged app.
