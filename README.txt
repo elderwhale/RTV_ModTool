@@ -30,6 +30,6 @@ Files included:
 Build the EXE:
 Use PyInstaller from the folder containing main.py:
 
-python -m PyInstaller --noconfirm --onefile --windowed --icon=assets/icon.ico --add-data "assets;assets" --name RTV_ModTool_Beta_v0.4.14 main.py
+py -m PyInstaller --noconfirm --onefile --windowed --icon=assets/icon.ico --add-data "assets;assets" --name RTV_ModTool_Beta_v0.4.14 main.py
 
 The --add-data option is important because it includes the custom logo and icon files in the packaged app.
