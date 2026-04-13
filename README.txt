@@ -1,0 +1,35 @@
+RTV_ModTool Beta v0.4.13
+
+RTV_ModTool is a save-management and editing utility for Road to Vostok testing.
+
+What it does:
+- lets you select a live save root and manage character folders from one place
+- tracks which character folder is currently linked to the active root save
+- syncs the active root save back to the linked character folder on open
+- lets you edit core player vitals safely
+- shows world values in read-only form for reference
+- creates rolling backups before restore and sync operations
+- caps backups to 10 per character slot to avoid save-folder bloat
+- includes a Buy Me a Coffee button
+
+Notes:
+- character folders are shown by folder name only
+- dehydration, frostbite, and insanity are display-only condition flags
+- world editing is intentionally disabled to avoid breaking game state
+
+Files included:
+- main.py
+- save_io.py
+- save_parser.py
+- save_scanner.py
+- assets/icon.ico
+- assets/logo.png
+- CHANGELOG.md
+- REDDIT_POST_FEATURES.md
+
+Build the EXE:
+Use PyInstaller from the folder containing main.py:
+
+python -m PyInstaller --noconfirm --onefile --windowed --icon=assets/icon.ico --add-data "assets;assets" --name RTV_ModTool_Beta_v0.4.13 main.py
+
+The --add-data option is important because it includes the custom logo and icon files in the packaged app.
