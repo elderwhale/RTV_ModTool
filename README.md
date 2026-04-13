@@ -38,7 +38,7 @@ py -m PyInstaller --noconfirm --onefile --windowed --icon=assets/icon.ico --add-
 ```
 - Click 'Select Save Root'
 - Navigate to C:\Users\YourUser\AppData\Roaming and select the Road to Vostok folder
-- Note that when this folder is selected the tool will insert folders related to backups, syncing, and character profiles then build your BaseCharacterTemplate from your initial save.
+- Note that when this folder is selected the tool will insert folders related to backups, syncing, and character profiles then build your BaseCharacterTemplate from your initial save. **Note, I'm still figuring out the inventory system and the way it's coded. For now, start new characters until you have a goopy default loadout to work with, then use that save as your template.**
 - Set values as desired and click Save Player, which saves that Character Profile to it's own folder, as well as setting it as the active one in the main game files. When the app is re-opened it will sync the active character from the game file to it's corresponding character folder.
 
 ## Planned Features
