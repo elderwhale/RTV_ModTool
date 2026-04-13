@@ -3,6 +3,8 @@
 RTV_ModTool is a save-management and editing utility for Road to Vostok testing.
 
 ⚠️ Please use at your own risk and open an issue if any bugs are encountered.
+⚠️ Remember to take a backup before going out on a permadeath run!
+
 
 ---
 
