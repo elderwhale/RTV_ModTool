@@ -47,6 +47,7 @@ py -m PyInstaller --noconfirm --onefile --windowed --icon=assets/icon.ico --add-
 ## Planned Features
 - Inventory, Equipment, Catalog Editing
 - Alternate start locations
+- Cat restore button :)
 
 ## Notes
 - Character folders are shown by folder name only
